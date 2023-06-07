@@ -31,6 +31,13 @@ public class LinkyContext : DbContext
             entity.Property(e => e.ConsumIndicator);
 
             entity.Property(e => e.PowerIndicator);
+
+            entity.Property(e => e.HourConsumIndicator);
+
+            entity.Property(e => e.DayConsumIndicator);
+
+            entity.Property(e => e.MonthConsumIndicator);
+
         });
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
